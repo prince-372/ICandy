@@ -140,7 +140,6 @@
 }
 
 /* width */
-
 .max-w-784 {
   max-width: 784px;
 }
@@ -160,7 +159,6 @@
 }
 
 /* padding */
-
 .pt-12 {
   padding-top: 12px;
 }
@@ -199,8 +197,7 @@
     bottom: 2%;
 }
 
-/* mediaqury */
-
+/* media */
 @media (min-width: 576px){
     :root {
         /* fontsize */
