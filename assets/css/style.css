@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  /* fontsize */
+  --fs-xl: 16px;
+  --fs-xxl: 40px;
+
+  /* fontwaight */
+  --fw-normal: 400;
+  --fw-semibold: 600;
+  --fw-extrabold: 800;
+
+  /* color */
+  --white: #ffffff;
+  --grey: #bbb4b6;
+  --blue: #0f63dd;
+  --purple: #9c6cc1;
+
+  /* leading */
+  --lh-md: 110%;
+  --lh-lg: 91%;
+}
+
+/* fontsize */
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+.fs-xxl {
+  font-size: var(--fs-xxl);
+}
+
+/* fontwaight */
+.fw-normal {
+  font-weight: var(--fw-normal);
+}
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+.fw-extrabold {
+  font-weight: var(--fw-extrabold);
+}
+
+/* color */
+.text-white {
+  color: var(--white);
+}
+.text-grey {
+  color: var(--grey);
+}
+.text-blue {
+  color: var(--blue);
+}
+.text-purple {
+  color: var(--purple);
+}
+
+/* leading */
+.lh-md {
+  line-height: var(--lh-md);
+}
+.lh-lg {
+  line-height: var(--lh-lg);
+}
+
+/* fontfamily */
+.font-Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.font-open {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* commanClass */
+.d-flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+
+/* backgraund */
+.candyImg {
+  background-image: url("../image/png/bgFullImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.iconsGradiunt {
+  background: linear-gradient(260.94deg, #f07cbd 9.82%, #8753a4 104.93%);
+}
+
+.bgText {
+  background: url("../image/png/textImage.png");
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
+  background-size: cover;
+  -webkit-background-clip: text;
+  animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 40% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+
+}
+.iconanimte{
+    transition: .4s;
+}
+
+.iconanimte:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+/* width */
+
+.max-w-784 {
+  max-width: 784px;
+}
+.max-w-544 {
+  max-width: 544px;
+}
+
+.candyLogo {
+    width: 267px;
+    height: 209px;
+    cursor: pointer;
+}
+.iconCircle {
+  width: 34px;
+  height: 34px;
+  border-radius: 118px;
+}
+
+/* padding */
+
+.pt-12 {
+  padding-top: 12px;
+}
+.pt-16 {
+  padding-top: 16px;
+}
+.pt-8{
+    padding-top: 8px;
+}
+.gap-15 {
+  gap: 15px;
+}
+.mr-35{
+    margin-right: 35px;
+}
+.px-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* other */
+.vibeBox{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 16.6px 0px var(--purple);
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    right: -6%;
+    bottom: 2%;
+}
+
+/* mediaqury */
+
+@media (min-width: 576px){
+    :root {
+        /* fontsize */
+        --fs-xl: 20px;
+        --fs-xxl: 52px;
+      
+        /* leading */
+        --lh-md: 120%;
+        --lh-lg: 150%;
+      }
+      .candyLogo {
+        width: 368px;
+        height: 261px;
+      }
+      .absolute{
+        position: absolute;
+        right: 0%;
+        bottom: 2%;
+    }
+
+    .pt-sm-40{
+        padding-top: 40px;
+    }
+    .pt-sm-0{
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 768px){
+    :root {
+        /* fontsize */
+        --fs-xl: 20px;
+        --fs-xxl: 68px;
+      
+        /* leading */
+        --lh-md: 120%;
+        --lh-lg: 150%;
+      }
+}
+@media (min-width: 992px){
+    :root {
+        /* fontsize */
+        --fs-xl: 20px;
+        --fs-xxl: 72px;
+      
+        /* leading */
+        --lh-md: 120%;
+        --lh-lg: 150%;
+      }
+}
