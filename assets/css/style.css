@@ -99,7 +99,7 @@
 
 /* backgraund */
 .candyImg {
-  background-image: url("../image/png/bgFullImage.png");
+  background-image: url("../image/png/bgFullImage.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@
 }
 
 .bgText {
-  background: url("../image/png/textImage.png");
+  background: url("../image/png/textImage.webp");
   -webkit-text-fill-color: transparent;
   color: transparent;
   background-clip: text;
